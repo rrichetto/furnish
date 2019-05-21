@@ -1,0 +1,17 @@
+.header {
+  padding: 3rem 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  &__logo-box {
+    display: flex;
+  }
+
+  &__logo {
+
+  }
+}

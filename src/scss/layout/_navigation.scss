@@ -1,0 +1,25 @@
+.navigation {
+  display: flex;
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+    font-weight: 700;
+  }
+
+  &__item {
+    margin-left: 3rem;
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    color: $color-grey;
+    text-decoration: none;
+
+    &--active {
+      color: $color-primary;
+    }
+  }
+}
