@@ -8,6 +8,7 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,700i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
@@ -38,14 +39,33 @@
 
   <section class="showcase">
     <div class="slideshow">
+      <div class="slideshow__control">
+        <div class="slideshow__control-btn slideshow__control-btn--active"></div>
+        <div class="slideshow__control-btn"></div>
+        <div class="slideshow__control-btn"></div>
+      </div>
       <div class="slideshow__slide">
         <div class="slideshow__image-box">
           <img class="slideshow__image" src="images/slider/1.jpg" alt="Sofa and Chairs">
         </div>
         <div class="slideshow__content-box">
-          <h1 class="slideshow__heading heading-primary">
-            Sofa and Armchairs
-          </h1>
+          <div class="slideshow__discount-tag">
+            <p class="slideshow__discount-text text-center">
+              -50%
+              <br>
+              Off
+            </p>
+          </div>
+          <div class="slideshow__text-box">
+            <h1 class="slideshow__heading heading-primary margin-bottom-sm"><span class="transparent-underline">Sofa</span> and <span class="transparent-underline">Armchairs</span></h1>
+            <p class="paragraph margin-bottom-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, atque necessitatibus! Voluptates incidunt quod omnis possimus, commodi dolor, dolorem saepe nostrum necessitatibus fuga molestiae aut!</p>
+            <a href="#" class="btn btn--primary">Download Now! <i class="lni-chevron-right"></i></a>
+          </div>
+          <div class="slideshow__social-box">
+            <a href="#" class="slideshow__icon-box"><i class="lni-facebook-filled"></i></a>
+            <a href="#" class="slideshow__icon-box"><i class="lni-twitter-filled"></i></i></a>
+            <a href="#" class="slideshow__icon-box"><i class="lni-instagram"></i></a>
+          </div>
         </div>
       </div>
     </div>

@@ -1,11 +1,31 @@
 body {
   font-family: $font-primary;
   color: $color-grey;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .heading-primary {
   color: $color-dark;
   font-size: 9.2rem;
+  line-height: 1.1;
   font-weight: 600;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  color: $color-grey;
+}
+
+.transparent-underline {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1rem;
+    width: 100%;
+    left: 0;
+    bottom: 1.2rem;
+    background-color: rgba($color-primary, 0.5);
+  }
 }
