@@ -1,0 +1,23 @@
+.slideshow {
+  padding: 0 10rem;
+  // height: 30rem;
+
+  &__slide {
+    width: 100%;
+    display: flex;
+  }
+
+  &__image-box {
+    flex: 0 0 33.3333%;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+  }
+
+  &__content-box {
+    background-color: $color-secondary;
+    flex: 0 0 66.6666%;
+  }
+}
