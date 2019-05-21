@@ -19,6 +19,10 @@ html {
 body {
   box-sizing: border-box; }
 
+::selection {
+  background-color: #FE7865;
+  color: #FEFAF6; }
+
 body {
   font-family: "Poppins", sans-serif;
   color: #777777;
@@ -91,7 +95,8 @@ body {
     height: 1rem;
     border-radius: 50%;
     background-color: rgba(254, 120, 101, 0.5);
-    margin: 1rem auto; }
+    margin: 1rem auto;
+    cursor: pointer; }
     .slideshow__control-btn--active {
       width: 1.625rem;
       height: 1.625rem;
@@ -99,6 +104,10 @@ body {
   .slideshow__slide {
     max-width: 175rem;
     display: flex; }
+    .slideshow__slide--2 {
+      display: none; }
+    .slideshow__slide--3 {
+      display: none; }
   .slideshow__image-box {
     flex: 0 0 33.3333%; }
   .slideshow__image {

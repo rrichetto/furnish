@@ -15,6 +15,7 @@
     border-radius: 50%;
     background-color: rgba($color-primary, 0.5);
     margin: 1rem auto;
+    cursor: pointer;
 
     &--active {
       width: 1.625rem;
@@ -26,6 +27,18 @@
   &__slide {
     max-width: 175rem;
     display: flex;
+
+    &--1 {
+
+    }
+
+    &--2 {
+      display: none;
+    }
+
+    &--3 {
+      display: none;
+    }
   }
 
   &__image-box {
