@@ -17,6 +17,11 @@
     font-size: 1.6rem;
     color: $color-grey;
     text-decoration: none;
+    transition: all .4s;
+
+    &:hover {
+      color: $color-primary;
+    }
 
     &--active {
       color: $color-primary;

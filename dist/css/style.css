@@ -21,7 +21,14 @@ body {
   margin: 0 auto; }
 
 .header {
-  padding: 3rem 0; }
+  padding: 3rem 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+  transition: all .4s; }
   .header .container {
     display: flex;
     justify-content: space-between;
@@ -41,6 +48,13 @@ body {
   .navigation__link {
     font-size: 1.6rem;
     color: #777777;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: all .4s; }
+    .navigation__link:hover {
+      color: #F77865; }
     .navigation__link--active {
       color: #F77865; }
+
+section {
+  background-color: aquamarine;
+  height: 300rem; }

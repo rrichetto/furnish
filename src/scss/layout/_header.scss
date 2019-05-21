@@ -1,5 +1,12 @@
 .header {
   padding: 3rem 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $color-white;
+  z-index: 999;
+  transition: all .4s;
 
   .container {
     display: flex;
