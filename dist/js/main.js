@@ -15,7 +15,37 @@ window.addEventListener('scroll', () => {
 // Showcase Slideshow
 const buttonEls = [...document.querySelectorAll('.slideshow__control-btn')];
 const slideEls = [...document.querySelectorAll('.slideshow__slide')];
+let index = 0;
 
+setInterval(slideShow, 7500);
+
+function slideShow() {
+  if (index < 2) {
+    index++;
+  } else {
+    index = 0;
+  }
+
+  // Changes the slide
+  slideEls.forEach((slide, currentIndex) => {
+    if (currentIndex === index) {
+      slide.style.display = "flex";
+    } else {
+      slide.style.display = "none";
+    }
+  })
+
+  // Changes the active button
+  buttonEls.forEach((button, currentIndex) => {
+    if (currentIndex === index) {
+      button.classList.add('slideshow__control-btn--active');
+    } else {
+      button.classList.remove('slideshow__control-btn--active');
+    }
+  })
+}
+
+// Event listener for click to change slide
 document.addEventListener("click", e => {
   if (e.target.classList.contains("slideshow__control-btn")) {
 
@@ -25,12 +55,12 @@ document.addEventListener("click", e => {
 
     e.target.classList.add('slideshow__control-btn--active');
 
-    let index = Number(e.target.dataset.index);
-    showSlide(index);
+    index = Number(e.target.dataset.index);
+    changeSlide(index);
   }
 });
 
-function showSlide(index) {
+function changeSlide(index) {
   slideEls.forEach((slide, i) => {
     if (i === index) {
       slide.style.display = "flex";
@@ -39,7 +69,3 @@ function showSlide(index) {
     }
   })
 }
-
-
-
-// ADD SET TIMOUT FUNCITON!!!

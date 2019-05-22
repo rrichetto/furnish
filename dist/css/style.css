@@ -34,6 +34,11 @@ body {
   line-height: 1.1;
   font-weight: 600; }
 
+.heading-tertiary {
+  color: #333333;
+  font-size: 2.4rem;
+  font-weight: 600; }
+
 .paragraph {
   font-size: 1.6rem;
   color: #777777; }
@@ -175,8 +180,8 @@ body {
     .slideshow__icon-box:hover {
       color: #FE7865;
       border-color: #FE7865; }
-  .slideshow i {
-    font-size: 1.8rem; }
+    .slideshow__icon-box i {
+      font-size: 1.8rem; }
 
 .header {
   padding: 3rem 0;
@@ -215,3 +220,38 @@ body {
 
 .showcase {
   padding: 0 2rem; }
+
+.products {
+  margin: 12rem 0;
+  padding: 0 2rem; }
+
+.featured {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  .featured__box {
+    flex: 0 0 48%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2); }
+    .featured__box:hover .featured__image {
+      transform: scale(1.2); }
+  .featured__image {
+    display: block;
+    width: 100%;
+    transition: all .5s; }
+  .featured__text-box {
+    position: absolute;
+    top: 4rem;
+    left: 3rem; }
+  .featured__link {
+    color: #777777;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: all .4s; }
+    .featured__link:hover {
+      color: #FE7865; }
+    .featured__link i {
+      font-size: 1.2rem; }

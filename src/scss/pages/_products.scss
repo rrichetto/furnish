@@ -1,0 +1,50 @@
+.products {
+  margin: 12rem 0;
+  padding: 0 2rem;
+}
+
+.featured {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__box {
+    flex: 0 0 48%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: .3rem .3rem .5rem rgba(0, 0, 0, .2);
+
+    &:hover .featured__image {
+      transform: scale(1.2);
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    transition: all .5s;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 4rem;
+    left: 3rem;
+  }
+
+  &__link {
+    color: $color-grey;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: all .4s;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    i {
+      font-size: 1.2rem;
+    }
+}
+}
