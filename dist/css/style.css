@@ -36,7 +36,7 @@ body {
 
 .heading-secondary {
   color: #333333;
-  font-size: 3rem;
+  font-size: 3.3rem;
   line-height: 1;
   font-weight: 600; }
 
@@ -227,6 +227,66 @@ body {
 .showcase {
   padding: 0 2rem; }
 
+.portfolio {
+  padding: 10rem 2rem; }
+  .portfolio__text-box {
+    display: flex; }
+  .portfolio__heading {
+    flex: 0 0 30%; }
+  .portfolio__paragraph {
+    max-width: 60rem; }
+  .portfolio__image-box {
+    width: 95%;
+    position: relative; }
+  .portfolio__image {
+    width: 100%;
+    display: block; }
+  .portfolio__preview-btn {
+    position: absolute;
+    left: 8rem;
+    bottom: -3.5rem;
+    z-index: 900;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2rem 6rem; }
+  .portfolio__controls {
+    position: absolute;
+    top: 5rem;
+    right: -5rem;
+    z-index: 900;
+    background-color: #FE7865;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .portfolio__previous, .portfolio__next {
+    padding: 1.3rem 2.6rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: all .4s; }
+    .portfolio__previous:hover, .portfolio__next:hover {
+      cursor: pointer;
+      background-color: #fe624c; }
+  .portfolio__previous::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 2.5rem;
+    width: 1px;
+    background-color: #fff;
+    transform: translateY(-50%); }
+  .portfolio__image-background {
+    position: absolute;
+    bottom: -3.7rem;
+    right: -3.7rem;
+    width: 40rem;
+    height: 30rem;
+    background-color: #fff3f1;
+    z-index: -1; }
+
 .products {
   padding: 10rem 2rem; }
 
@@ -369,7 +429,7 @@ body {
     width: 6.5rem;
     border-radius: 50%;
     background-color: #FE7865;
-    z-index: 999;
+    z-index: 900;
     display: flex;
     justify-content: center;
     align-items: center; }
