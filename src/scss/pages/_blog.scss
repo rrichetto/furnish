@@ -1,0 +1,100 @@
+.blog {
+  margin-top: 20rem;
+  padding: 10rem 0;
+
+  &__text-box {
+    max-width: 60rem;
+    margin: 0 auto 6rem auto;
+  }
+
+  &__content-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__post {
+    flex: 0 0 31%;
+    border: 1px solid rgba($color-grey, 0.3);
+
+    &:hover .blog__image {
+      transform: scale(1.1);
+    }
+  }
+
+  &__image-box {
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    transition: all .4s;
+  }
+
+  &__title {
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    padding: 0 2rem;
+
+    &--link {
+      text-decoration: none;
+      color: $color-dark;
+      font-size: 2.5rem;
+      font-weight: 600;
+      transition: all .4s;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__date {
+    font-style: italic;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__author-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-top: 1px solid rgba($color-grey, 0.3);
+  }
+
+  &__author-image-box {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  &__author-image {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  &__author-name {
+    margin-left: 2rem;
+    margin-right: auto;
+    font-size: 1.8rem;
+  }
+
+  &__links {
+    width: 6rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: $color-dark;
+    transition: all .4s;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
