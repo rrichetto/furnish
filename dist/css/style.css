@@ -548,3 +548,52 @@ body {
     transition: all .4s; }
     .team__social-link:hover {
       color: #FE7865; }
+
+.testimonials {
+  height: 46rem;
+  background: url("../images/testimonial/ts-bg.jpg") no-repeat center center/cover;
+  position: relative; }
+  .testimonials__box {
+    position: absolute;
+    width: 45rem;
+    top: 40%;
+    background-color: rgba(254, 120, 101, 0.9);
+    color: #fff;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .testimonials__box i {
+      font-size: 6rem;
+      margin-bottom: 1rem; }
+  .testimonials__paragraph {
+    font-size: 2.8rem;
+    font-style: italic;
+    font-weight: 300; }
+  .testimonials__name {
+    font-size: 1.8rem;
+    font-weight: 600; }
+  .testimonials__profession {
+    font-size: 1.4rem; }
+  .testimonials__play-video {
+    position: absolute;
+    top: 45%;
+    right: 20%;
+    height: 9rem;
+    width: 9rem;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .testimonials__play-video:hover {
+      cursor: pointer;
+      background-color: #FE7865; }
+      .testimonials__play-video:hover i {
+        color: #fff; }
+    .testimonials__play-video i {
+      color: #FE7865;
+      font-size: 5.5rem;
+      margin-left: 1rem;
+      transition: all .4s; }
