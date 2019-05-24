@@ -27,13 +27,13 @@
       </div>
       <nav class="navigation">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link navigation__link--active">Home</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Products</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Services</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Portfolio</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Team</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Blog</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+          <li class="navigation__item"><a href="#home" class="navigation__link navigation__link--active">Home</a></li>
+          <li class="navigation__item"><a href="#products" class="navigation__link">Products</a></li>
+          <li class="navigation__item"><a href="#services" class="navigation__link">Services</a></li>
+          <li class="navigation__item"><a href="#portfolio" class="navigation__link">Portfolio</a></li>
+          <li class="navigation__item"><a href="#team" class="navigation__link">Team</a></li>
+          <li class="navigation__item"><a href="#blog" class="navigation__link">Blog</a></li>
+          <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -41,7 +41,7 @@
 
 
   <!-- Showcase -->
-  <section class="showcase">
+  <section class="showcase" id="home">
     <div class="slideshow">
 
       <div class="slideshow__control">
@@ -128,7 +128,7 @@
   </section>
 
   <!-- Products Section -->
-  <section class="products">
+  <section class="products" id="products">
     <div class="container">
 
       <div class="featured">
@@ -235,7 +235,7 @@
   </section>
 
   <!-- Services Section -->
-  <section class="services">
+  <section class="services" id="services">
     <div class="container">
       <div class="services__text-box mb-sm">
         <h3 class="services__heading mb-sm">Our Services</h3>
@@ -276,7 +276,7 @@
   </section>
 
   <!-- Portfolio Section -->
-  <div class="portfolio">
+  <div class="portfolio"  id="portfolio">
     <div class="container">
       <div class="portfolio__text-box mb-md">
         <h2 class="portfolio__heading heading-secondary">Showcase</h2>
@@ -295,7 +295,7 @@
   </div>
 
   <!-- Team Section -->
-  <section class="team">
+  <section class="team"  id="team">
     <div class="container">
 
       <div class="team__text-box text-center">
@@ -368,8 +368,14 @@
     </div>
   </section>
 
+  <div class="video-modal">
+    <div class="video-modal__box">
+      <iframe class="video-modal__video" src="https://www.youtube.com/embed/l8ccw7BMrMA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
   <!-- Blog Section -->
-  <section class="blog">
+  <section class="blog"  id="blog">
     <div class="container">
       <div class="blog__text-box text-center">
           <h2 class="blog__heading heading-secondary mb-sm">From The Blog</h2>
@@ -432,7 +438,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact">
+  <section class="contact"  id="contact">
     <div class="container">
 
       <h2 class="contact__heading text-center mb-md">Get In Touch</h2>
@@ -509,6 +515,12 @@
     <p class="credits">This is a remake of a website originally created by <a href="#">https://uideck.com</a></p>
   </footer>
 
+  <a href="#home" class="btn-return"><i class="lni-chevron-up"></i></a>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

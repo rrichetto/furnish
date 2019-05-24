@@ -12,6 +12,35 @@ window.addEventListener('scroll', () => {
 })
 
 
+// Show "Back to Top" button upon scroll
+const returnBtnEl = document.querySelector('.btn-return');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 200) {
+    returnBtnEl.style.display = "flex";
+  } else {
+    returnBtnEl.style.display = "none";
+  }
+})
+
+
+// Smooth Navigation Scrolling
+$('.navigation__link, .btn-return').on('click', function(event) {
+  if (this.hash !== '') {
+    event.preventDefault();
+
+    const hash = this.hash;
+
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top - 100
+      },
+      800
+    );
+  }
+});
+
+
 // Showcase Slideshow
 const buttonEls = [...document.querySelectorAll('.slideshow__control-btn')];
 const slideEls = [...document.querySelectorAll('.slideshow__slide')];
@@ -68,4 +97,29 @@ function changeSlide(index) {
       slide.style.display = "none";
     }
   })
+}
+
+
+// Video Modal
+const playVideoEl = document.querySelector('.testimonials__play-video');
+const videoModalEl = document.querySelector('.video-modal');
+const videoEl = document.querySelector('.video-modal__video');
+
+playVideoEl.addEventListener('click', openVideoModal);
+window.addEventListener('click', closeVideoModal);
+
+function openVideoModal(e) {
+  // Reset the 'src' in case it was previously closed (and thus the 'src' was removed)
+  videoEl.setAttribute('src', 'https://www.youtube.com/embed/l8ccw7BMrMA');
+
+  videoModalEl.style.display = "flex";
+}
+
+function closeVideoModal(e) {
+  if (e.target === videoModalEl) {
+    // Stop the video
+    videoEl.setAttribute('src', '');
+
+    videoModalEl.style.display = "none";
+  }
 }
