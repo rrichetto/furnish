@@ -1,11 +1,16 @@
 .services {
-  padding: 10rem 2rem;
+  padding: 10rem 0;
   background-color: $color-secondary;
 
 
   &__text-box {
     max-width: 58rem;
     padding: 2rem 2rem 2rem 0;
+
+    @include respond(bp-large) {
+      max-width: 80%;
+      margin: 0 auto;
+    }
   }
 
   &__heading {
@@ -29,10 +34,19 @@
   &__content {
     display: flex;
     justify-content: space-between;
+
+    @include respond(bp-large) {
+      flex-direction: column;
+    }
   }
 
   &__read-more {
     flex: 0 0 49%;
+
+    @include respond(bp-large) {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 
   &__image-box {
@@ -50,12 +64,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 3rem;
+
+    @include respond(bp-large) {
+      margin: 0 auto;
+      margin-top: 5rem;
+      width: 80%;
+    }
+
+    @include respond(bp-small) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__service {
     border: 1px solid rgba($color-grey, 0.3);
     background-color: $color-white;
-    padding: 1rem;
+    padding: 2rem 1rem;
 
     display: flex;
     flex-direction: column;
@@ -63,14 +87,24 @@
     align-items: center;
     text-align: center;
 
-    &--2 {
-      position: relative;
-      top: 3rem;
+    @include respond(bp-large) {
+      width: 100%;
     }
 
+    @include respond(bp-small) {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &--2,
     &--4 {
       position: relative;
       top: 3rem;
+
+      @include respond(bp-small) {
+        top: 0;
+      }
     }
 
     i {

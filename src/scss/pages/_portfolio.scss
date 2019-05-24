@@ -1,12 +1,20 @@
 .portfolio {
-  padding: 10rem 2rem;
+  padding: 10rem;
 
   &__text-box {
     display: flex;
+
+    @include respond(bp-large) {
+      flex-direction: column;
+    }
   }
 
   &__heading {
     flex: 0 0 30%;
+    
+    @include respond(bp-large) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__paragraph {
@@ -16,6 +24,10 @@
   &__image-box {
     width: 95%;
     position: relative;
+
+    @include respond(bp-medium) {
+      width: 100%;
+    }
   }
 
   &__image {

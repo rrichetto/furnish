@@ -1,17 +1,27 @@
 .footer {
-  padding: 0 2rem 2rem 2rem;
+  padding-bottom: 2rem;
   background: url('../images/footer-bg.png');
 
   .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__box {
     flex: 0 0 20%;
+    padding: 2rem 0;
 
     display: flex;
     flex-direction: column;
+
+    @include respond(bp-large) {
+      flex: 0 0 30%;
+    }
+
+    @include respond(bp-medium) {
+      flex: 0 0 47%;
+    }
   }
 
   &__social {

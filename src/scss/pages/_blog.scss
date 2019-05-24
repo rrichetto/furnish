@@ -10,14 +10,29 @@
   &__content-box {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include respond(bp-large) {
+      justify-content: space-evenly;
+    }
   }
 
   &__post {
     flex: 0 0 31%;
     border: 1px solid rgba($color-grey, 0.3);
 
+    @include respond(bp-large) {
+      flex: 0 0 45%;
+    }
+
     &:hover .blog__image {
       transform: scale(1.1);
+    }
+
+    &:nth-of-type(3) {
+      @include respond(bp-large) {
+        margin-top: 3rem;
+      }
     }
   }
 
