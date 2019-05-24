@@ -12,6 +12,7 @@ window.addEventListener('scroll', () => {
 })
 
 
+
 // Show "Back to Top" button upon scroll
 const returnBtnEl = document.querySelector('.btn-return');
 
@@ -22,6 +23,7 @@ window.addEventListener('scroll', () => {
     returnBtnEl.style.display = "none";
   }
 })
+
 
 
 // Smooth Navigation Scrolling
@@ -41,12 +43,13 @@ $('.navigation__link, .btn-return').on('click', function(event) {
 });
 
 
+
 // Showcase Slideshow
 const buttonEls = [...document.querySelectorAll('.slideshow__control-btn')];
 const slideEls = [...document.querySelectorAll('.slideshow__slide')];
 let index = 0;
 
-setInterval(slideShow, 7500);
+setInterval(slideShow, 9000);
 
 function slideShow() {
   if (index < 2) {
@@ -98,6 +101,7 @@ function changeSlide(index) {
     }
   })
 }
+
 
 
 // Video Modal

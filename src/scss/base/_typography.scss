@@ -6,7 +6,7 @@ body {
 
 .heading-primary {
   color: $color-dark;
-  font-size: 9.2rem;
+  font-size: 9rem;
   line-height: 1.1;
   font-weight: 600;
 }
@@ -40,5 +40,13 @@ body {
     left: 0;
     bottom: 1.2rem;
     background-color: rgba($color-primary, 0.5);
+
+    @include respond(bp-larger) {
+      height: .5rem;
+    }
+
+    @include respond(bp-large) {
+      bottom: .6rem;
+    }
   }
 }

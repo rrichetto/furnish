@@ -1,7 +1,7 @@
 .products {
   padding: 10rem 0;
 
-  @include respond(bp-small) {
+  @include respond(bp-medium) {
     padding: 5rem 0;
   }
 }
@@ -24,6 +24,10 @@
 
     @include respond(bp-medium) {
       margin: 2rem 0;
+      width: 90%;
+    }
+
+    @include respond(bp-smallest) {
       width: 100%;
     }
 
@@ -45,6 +49,12 @@
 
     @include respond(bp-smallest) {
       top: 2rem;
+    }
+
+    h3 {
+      @include respond(bp-smallest) {
+        font-size: 1.8rem;
+      }
     }
   }
 

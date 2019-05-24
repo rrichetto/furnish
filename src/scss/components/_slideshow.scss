@@ -1,12 +1,24 @@
 .slideshow {
-  padding: 0 10rem;
+  padding: 0 5rem;
   position: relative;
+
+  @include respond(bp-larger) {
+    padding: 0 1rem;
+  }
+
+  @include respond(bp-medium) {
+    padding-bottom: 0;
+  }
 
   &__control {
     position: absolute;
     top: 50%;
-    left: 4rem;
+    left: 1.5rem;
     transform: translateY(-50%);
+
+    @include respond(bp-medium) {
+      display: none;
+    }
   }
 
   &__control-btn {
@@ -25,7 +37,6 @@
   }
 
   &__slide {
-    max-width: 175rem;
     display: flex;
 
     &--1 {
@@ -43,6 +54,10 @@
 
   &__image-box {
     flex: 0 0 33.3333%;
+
+    @include respond(bp-medium) {
+      display: none;
+    }
   }
 
   &__image {
@@ -59,6 +74,11 @@
 
     position: relative;
 
+    @include respond(bp-medium) {
+      flex: 0 0 100%;
+    }
+
+
     &::after {
       position: absolute;
       content: "";
@@ -67,6 +87,10 @@
       left: 12.5rem;
       bottom: 3.75rem;
       background-color: $color-primary;
+
+      @include respond(bp-large) {
+        display: none;
+      }
     }
   }
 
@@ -82,6 +106,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include respond(bp-larger) {
+      left: -4.5rem;
+      width: 9rem;
+      height: 9rem;
+    }
+
+    @include respond(bp-large) {
+      top: 1rem;
+      left: -10rem;
+    }
+
+    @include respond(bp-medium) {
+      display: none;
+    }
   }
 
   &__discount-text {
@@ -95,20 +134,71 @@
     max-width: 68rem;
     margin-left: 10rem;
     padding: 0 2.5rem;
+
+    @include respond(bp-larger) {
+      padding: 1rem 2.5rem;
+      margin-left: 5rem;
+    }
+
+    @include respond(bp-large) {
+      margin-left: 2rem;
+    }
+
+    @include respond(bp-medium) {
+      padding: 2.5rem;
+    }
+
+    @include respond(bp-smallest) {
+      padding: 1rem .5rem;
+    }
   }
 
   &__heading {
     animation: moveInBottom 1s ease-out;
+
+    @include respond(bp-larger) {
+      font-size: 6rem;
+      margin-bottom: .5rem;
+    }
+
+    @include respond(bp-large) {
+      font-size: 5rem;
+    }
+
+    @include respond(bp-medium) {
+      margin-bottom: 2rem;
+    }
+
+    @include respond(bp-smallest) {
+      font-size: 4rem;
+    }
   }
 
   .paragraph {
     animation: moveInBottom 1s ease-out .5s;
     animation-fill-mode: backwards;
+
+    @include respond(bp-larger) {
+      font-size: 1.4rem;
+    }
+
+    @include respond(bp-large) {
+      margin-bottom: 1rem;
+    }
+
+    @include respond(bp-medium) {
+      margin-bottom: 2rem;
+      font-size: 1.6rem;
+    }
   }
 
   .btn {
     animation: moveInBottom 1s ease-out .75s;
     animation-fill-mode: backwards;
+
+    @include respond(bp-larger) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__social-box {
@@ -120,6 +210,10 @@
 
     display: flex;
     justify-content: space-between;
+
+    @include respond(bp-small) {
+      display: none;
+    }
   }
 
   &__icon-box {

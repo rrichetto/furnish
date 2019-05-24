@@ -43,6 +43,11 @@
   &__image {
     width: 100%;
     display: block;
+
+    &:not(:first-of-type) {
+      // initially, we hide all but the first image
+      display: none;
+    }
   }
 
   &__preview-btn {
