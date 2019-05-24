@@ -42,6 +42,7 @@
   cursor: pointer;
   transition: all .4s;
   text-decoration: none;
+  z-index: 999;
 
   &:hover {
     background-color: $color-white;

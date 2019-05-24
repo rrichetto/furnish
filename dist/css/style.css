@@ -119,7 +119,8 @@ body {
   border: 1px solid #FE7865;
   cursor: pointer;
   transition: all .4s;
-  text-decoration: none; }
+  text-decoration: none;
+  z-index: 999; }
   .btn-return:hover {
     background-color: #fff;
     color: #FE7865; }
@@ -365,7 +366,7 @@ body {
   font-size: 1.2rem;
   margin: 0 auto;
   max-width: 23rem;
-  margin-top: 10rem; }
+  margin-top: 5rem; }
   .credits a {
     text-decoration: none;
     color: #FE7865; }
