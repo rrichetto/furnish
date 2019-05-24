@@ -26,6 +26,10 @@
     flex: 0 0 30%;
     padding: 3rem 2rem 0rem 4rem;
 
+    @include respond(bp-small) {
+      padding-left: 1.5rem;
+    }
+
     i {
       color: $color-primary;
       margin-right: 1.5rem;

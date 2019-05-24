@@ -2,9 +2,17 @@
   margin-top: 20rem;
   padding: 10rem 0;
 
+  @include respond(bp-small) {
+    padding: 0 0 7rem 0;
+  }
+
   &__text-box {
     max-width: 60rem;
     margin: 0 auto 6rem auto;
+
+    @include respond(bp-small) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__content-box {
@@ -23,6 +31,11 @@
 
     @include respond(bp-large) {
       flex: 0 0 45%;
+    }
+
+    @include respond(bp-small) {
+      flex: 0 0 90%;
+      margin-top: 3rem;
     }
 
     &:hover .blog__image {

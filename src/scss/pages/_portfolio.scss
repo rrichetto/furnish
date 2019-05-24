@@ -1,5 +1,15 @@
 .portfolio {
-  padding: 10rem;
+  padding: 10rem 0;
+
+  @include respond(bp-medium) {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  @include respond(bp-small) {
+    width: 100%;
+    padding: 5rem 0;
+  }
 
   &__text-box {
     display: flex;
@@ -11,7 +21,7 @@
 
   &__heading {
     flex: 0 0 30%;
-    
+
     @include respond(bp-large) {
       margin-bottom: 2rem;
     }
@@ -59,6 +69,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @include respond(bp-small) {
+      right: -2rem;
+    }
   }
 
   &__previous,
@@ -97,5 +111,10 @@
     height: 30rem;
     background-color: #fff3f1;
     z-index: -1;
+
+    @include respond(bp-small) {
+      width: 20rem;
+      height: 15rem;
+    }
   }
 }

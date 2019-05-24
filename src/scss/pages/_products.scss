@@ -1,5 +1,9 @@
 .products {
   padding: 10rem 0;
+
+  @include respond(bp-small) {
+    padding: 5rem 0;
+  }
 }
 
 .featured {
@@ -11,6 +15,7 @@
     flex-direction: column;
   }
 
+
   &__box {
     flex: 0 0 48%;
     position: relative;
@@ -18,11 +23,6 @@
     box-shadow: .3rem .3rem .5rem rgba(0, 0, 0, .2);
 
     @include respond(bp-medium) {
-      margin: 2rem 0;
-      width: 90%;
-    }
-
-    @include respond(bp-small) {
       margin: 2rem 0;
       width: 100%;
     }
@@ -42,6 +42,10 @@
     position: absolute;
     top: 4rem;
     left: 3rem;
+
+    @include respond(bp-smallest) {
+      top: 2rem;
+    }
   }
 
   &__link {
@@ -53,6 +57,8 @@
 
     @include respond(bp-smallest) {
       color: $color-dark;
+      font-weight: 700;
+      text-transform: uppercase;
     }
 
     &:hover {
@@ -76,13 +82,15 @@
 
   @include respond(bp-medium) {
     flex-direction: column;
-    width: 70%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
   }
 
   @include respond(bp-small) {
-    width: 85%;
+    width: 100%;
+    margin-top: 5rem;
+
   }
 
   &__categories {
@@ -120,6 +128,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include respond(bp-medium) {
+      font-size: 2.2rem;
+    }
 
     &--current {
       color: $color-white;
@@ -165,7 +177,7 @@
     }
 
     @include respond(bp-medium) {
-      flex: 0 0 47.5%;
+      flex: 0 0 49%;
       margin-top: 3.5rem;
     }
   }

@@ -2,6 +2,10 @@
   padding: 10rem 0;
   background-color: $color-secondary;
 
+  @include respond(bp-small) {
+    padding: 7rem 0;
+  }
+
   &__text-box {
     max-width: 60rem;
     margin: 0 auto 6rem auto;
@@ -15,6 +19,12 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 5rem;
+    }
+
+    @include respond(bp-small) {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 3rem;
     }
   }
 
