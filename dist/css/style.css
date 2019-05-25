@@ -629,14 +629,6 @@ body {
     display: block; }
     .portfolio__image:not(:first-of-type) {
       display: none; }
-  .portfolio__preview-btn {
-    position: absolute;
-    left: 8rem;
-    bottom: -3.5rem;
-    z-index: 900;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 2rem 6rem; }
   .portfolio__controls {
     position: absolute;
     top: 5rem;
@@ -648,9 +640,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 50em) {
       .portfolio__controls {
-        right: -2rem; } }
+        display: none; } }
   .portfolio__previous, .portfolio__next {
     padding: 1.3rem 2.6rem;
     display: flex;

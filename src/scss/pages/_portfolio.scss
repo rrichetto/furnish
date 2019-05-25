@@ -50,17 +50,6 @@
     }
   }
 
-  &__preview-btn {
-    position: absolute;
-    left: 8rem;
-    bottom: -3.5rem;
-    z-index: 900;
-
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 2rem 6rem;
-  }
-
   &__controls {
     position: absolute;
     top: 5rem;
@@ -75,8 +64,8 @@
     justify-content: space-around;
     align-items: center;
 
-    @include respond(bp-small) {
-      right: -2rem;
+    @include respond(bp-medium) {
+      display: none;
     }
   }
 

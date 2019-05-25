@@ -127,3 +127,43 @@ function closeVideoModal(e) {
     videoModalEl.style.display = "none";
   }
 }
+
+
+// Portfolio Slideshow
+const prevBtnEl = document.querySelector('.portfolio__previous');
+const nextBtnEl = document.querySelector('.portfolio__next');
+const portfolioImgEls = document.querySelectorAll('.portfolio__image');
+
+let counter = 0;
+
+nextBtnEl.addEventListener('click', () => {
+  if (counter === 2) {
+    counter = 0;
+  } else {
+    counter++;
+  }
+
+  portfolioImgEls.forEach((img, i) => {
+    if (i === counter) {
+      img.style.display = "flex";
+    } else {
+      img.style.display = "none";
+    }
+  })
+})
+
+prevBtnEl.addEventListener('click', () => {
+  if (counter === 0) {
+    counter = 2;
+  } else {
+    counter--;
+  }
+
+  portfolioImgEls.forEach((img, i) => {
+    if (i === counter) {
+      img.style.display = "flex";
+    } else {
+      img.style.display = "none";
+    }
+  })
+})
