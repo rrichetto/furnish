@@ -53,7 +53,7 @@
 
     h3 {
       @include respond(bp-smallest) {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
     }
   }
@@ -68,7 +68,6 @@
     @include respond(bp-smallest) {
       color: $color-dark;
       font-weight: 700;
-      text-transform: uppercase;
     }
 
     &:hover {
@@ -246,56 +245,6 @@
       top: 45%;
       background-color: rgba(black, 0.5);
     }
-  }
-
-  &__slide-control {
-    position: absolute;
-    top: 40%;
-    right: -4rem;
-    transform: translateY(-50%);
-
-    @include respond(bp-larger) {
-      right: -1.5rem;
-    }
-
-    @include respond(bp-medium) {
-      display: none;
-    }
-  }
-
-  &__next-slide,
-  &__previous-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: $color-primary;
-    font-size: 2rem;
-    height: 5rem;
-    width: 5rem;
-    border: 1px solid $color-primary;
-    border-radius: 50%;
-    transition: all .4s;
-
-    @include respond(bp-larger) {
-      font-size: 1.2rem;
-      height: 3rem;
-      width: 3rem;
-    }
-
-    &:hover {
-      color: $color-white;
-      background-color: $color-primary;
-      cursor: pointer;
-    }
-  }
-
-  &__next-slide {
-    padding-left: .3rem;
-  }
-
-  &__previous-slide {
-    padding-right: .3rem;
   }
 
   &__discount-tag {

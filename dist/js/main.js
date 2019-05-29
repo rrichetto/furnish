@@ -3,7 +3,7 @@ const headerEl = document.querySelector('.header');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 10) {
-    headerEl.style.padding = "1rem 0";
+    headerEl.style.padding = "2rem 0 1rem 0";
     headerEl.style.boxShadow = "0 1rem 1rem rgba(0, 0, 0, .1)";
   } else {
     headerEl.style.padding = "3rem 0";
@@ -27,7 +27,7 @@ window.addEventListener('scroll', () => {
 
 
 // Smooth Navigation Scrolling
-$('.navigation__link, .btn-return').on('click', function(event) {
+$('.navigation__link, .btn-return, .slideshow__btn').on('click', function(event) {
   if (this.hash !== '') {
     event.preventDefault();
 
@@ -49,7 +49,7 @@ const buttonEls = [...document.querySelectorAll('.slideshow__control-btn')];
 const slideEls = [...document.querySelectorAll('.slideshow__slide')];
 let index = 0;
 
-setInterval(slideShow, 9000);
+setInterval(slideShow, 7500);
 
 function slideShow() {
   if (index < 2) {

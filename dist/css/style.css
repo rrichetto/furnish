@@ -389,10 +389,11 @@ body {
 
 .navigation {
   display: flex;
-  position: relative; }
+  position: relative;
+  align-items: center; }
   .navigation__label {
     font-size: 3rem;
-    margin-right: 5rem;
+    margin-right: 2rem;
     cursor: pointer;
     display: none; }
     @media (max-width: 50em) {
@@ -413,7 +414,7 @@ body {
         flex-direction: column;
         position: absolute;
         top: 6.5rem;
-        left: -12rem;
+        left: -13rem;
         border: 1px solid #c4c4c4; } }
   .navigation__item {
     margin-left: 3rem; }
@@ -714,7 +715,7 @@ body {
         top: 2rem; } }
     @media (max-width: 25em) {
       .featured__text-box h3 {
-        font-size: 1.8rem; } }
+        font-size: 2rem; } }
   .featured__link {
     color: #777777;
     text-decoration: none;
@@ -724,8 +725,7 @@ body {
     @media (max-width: 25em) {
       .featured__link {
         color: #333333;
-        font-weight: 700;
-        text-transform: uppercase; } }
+        font-weight: 700; } }
     .featured__link:hover {
       color: #FE7865; }
     .featured__link i {
@@ -845,41 +845,6 @@ body {
       left: 0;
       top: 45%;
       background-color: rgba(0, 0, 0, 0.5); }
-  .collection__slide-control {
-    position: absolute;
-    top: 40%;
-    right: -4rem;
-    transform: translateY(-50%); }
-    @media (max-width: 75em) {
-      .collection__slide-control {
-        right: -1.5rem; } }
-    @media (max-width: 50em) {
-      .collection__slide-control {
-        display: none; } }
-  .collection__next-slide, .collection__previous-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FE7865;
-    font-size: 2rem;
-    height: 5rem;
-    width: 5rem;
-    border: 1px solid #FE7865;
-    border-radius: 50%;
-    transition: all .4s; }
-    @media (max-width: 75em) {
-      .collection__next-slide, .collection__previous-slide {
-        font-size: 1.2rem;
-        height: 3rem;
-        width: 3rem; } }
-    .collection__next-slide:hover, .collection__previous-slide:hover {
-      color: #fff;
-      background-color: #FE7865;
-      cursor: pointer; }
-  .collection__next-slide {
-    padding-left: .3rem; }
-  .collection__previous-slide {
-    padding-right: .3rem; }
   .collection__discount-tag {
     position: absolute;
     top: 2rem;
