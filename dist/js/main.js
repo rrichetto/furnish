@@ -13,6 +13,20 @@ window.addEventListener('scroll', () => {
 
 
 
+// Toggle navigation 'active' class
+const navEl = document.querySelector('.navigation__list');
+const linkEls = document.querySelectorAll('.navigation__link');
+
+navEl.addEventListener('click', (e) => {
+  linkEls.forEach(link => {
+    link.classList.remove('navigation__link--active');
+  })
+
+  e.target.classList.add('navigation__link--active');
+})
+
+
+
 // Show "Back to Top" button upon scroll
 const returnBtnEl = document.querySelector('.btn-return');
 
@@ -41,8 +55,6 @@ $('.navigation__link, .btn-return, .slideshow__btn').on('click', function(event)
     );
   }
 });
-
-
 
 // Showcase Slideshow
 const buttonEls = [...document.querySelectorAll('.slideshow__control-btn')];
@@ -127,6 +139,7 @@ function closeVideoModal(e) {
     videoModalEl.style.display = "none";
   }
 }
+
 
 
 // Portfolio Slideshow

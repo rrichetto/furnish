@@ -1,1 +1,1 @@
-This repo contains a remake of the Furnish e-commerce theme from OnePageLove: https://onepagelove.com/furnish
+This repo contains a remake of the Furnish e-commerce theme from OnePageLove: https://onepagelove.com/furnish. All code is my own.
